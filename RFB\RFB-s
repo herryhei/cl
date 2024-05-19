@@ -26,7 +26,7 @@ class BasicConv(nn.Module):
         return x
 
 
-class BasicRFB(nn.Module):
+class BasicRFB(nn.Module)://RFB
 
     def __init__(self, in_planes, out_planes, stride=1, scale = 0.1,map_reduce=8):
         super(BasicRFB, self).__init__()
@@ -74,7 +74,7 @@ class BasicRFB(nn.Module):
 
         return out
 
-class BasicRFB_a(nn.Module):
+class BasicRFB_a(nn.Module)://RFB-S
 
     def __init__(self, in_planes, out_planes, stride=1, scale = 0.1):
         super(BasicRFB_a, self).__init__()
